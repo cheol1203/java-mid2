@@ -53,6 +53,7 @@ public class MyArrayListV4<E> {
         }
     }
 
+    //타입 이레이저에 의해 new E 는 생성할 수 없다.
     @SuppressWarnings("unchecked")
     public E get(int index){
         return (E)elementData[index];
