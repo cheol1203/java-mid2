@@ -1,0 +1,40 @@
+package collection.deque;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class DequeMain {
+    /*
+    데크 자료구조는 양쪽 끝에서 요소를 추가하거나 제거할 수 있다. 큐와 스택의 기능 모두 포함
+    offerFirst() : 앞에 추가한다.
+    offerLast()  : 뒤에 추가한다.
+    pollFirst() : 앞에서 꺼낸다.
+    pollLast() : 뒤에서 꺼낸다.
+     */
+    public static void main(String[] args) {
+        Deque<Integer> deque = new ArrayDeque<>();
+        //Deque<Integer> deque = new LinkedList<>();
+
+        //데이터 추가
+        deque.offerFirst(1);
+        System.out.println(deque);
+        deque.offerFirst(2);
+        System.out.println(deque);
+        deque.offerLast(3);
+        System.out.println(deque);
+        deque.offerLast(4);
+        System.out.println(deque);
+
+        // 다음 꺼낼 데이터 확인(꺼내지 않고 단순 조회만)
+        System.out.println("deque.peekFirst() = " + deque.peekFirst());
+        System.out.println("deque.peekFirst() = " + deque.peekLast());
+
+        //데이터 꺼내기
+        System.out.println("deque.pollFirst() = " + deque.pollFirst());
+        System.out.println("deque.pollFirst() = " + deque.pollFirst());
+        System.out.println("deque.pollFirst() = " + deque.pollLast());
+        System.out.println("deque.pollFirst() = " + deque.pollLast());
+        System.out.println(deque);
+
+    }
+}
