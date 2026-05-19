@@ -1,4 +1,4 @@
-# ☕ Java Mid-2 Study
+# ☕ Java 중급 2
 
 Java 중급 문법 중 제네릭과 컬렉션 프레임워크를 학습하며 정리한 저장소입니다.  
 제네릭의 기본 개념부터 ArrayList, LinkedList, List, Hash, Set, Map, Stack, Queue, 정렬까지 Java에서 데이터를 효율적으로 다루기 위한 핵심 개념을 학습했습니다.
